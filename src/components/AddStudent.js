@@ -39,6 +39,7 @@ const AddStudent = () => {
             setName(t.target.value)
           }
           className="form-control"
+          required
         />
         <input
           type="number"
@@ -47,6 +48,7 @@ const AddStudent = () => {
             setLevel(t.target.value)
           }
           className="form-control"
+          required
         />
         <input
           type="text"
@@ -55,6 +57,7 @@ const AddStudent = () => {
             setReason(t.target.value)
           }
           className="form-control"
+          required
         />
         <input
           type="text"
@@ -63,6 +66,7 @@ const AddStudent = () => {
             setLocation(t.target.value)
           }
           className="form-control"
+          required
         />
         <div className="form-group">
           <label> Departure date</label>
@@ -73,10 +77,11 @@ const AddStudent = () => {
               setDepDate(t.target.value)
             }
             className="form-control"
+            required
           />
         </div>
         <div className="form-group">
-          <label> Departure date</label>
+          <label> Return date</label>
           <input
             type="date"
             placeholder="Return date"
@@ -84,6 +89,7 @@ const AddStudent = () => {
               setRetDate(t.target.value)
             }
             className="form-control"
+            required
           />
         </div>
         <input
@@ -93,6 +99,7 @@ const AddStudent = () => {
             setIndexNo(t.target.value)
           }
           className="form-control"
+          required
         />
         <button className="form-control btn btn-success">
           ADD
